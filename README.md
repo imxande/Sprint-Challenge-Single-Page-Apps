@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: Allows smooth control, better client expirience, since page is not flashing everytime something is updated or a form is submitted.
 
 ## Project Set Up
 
