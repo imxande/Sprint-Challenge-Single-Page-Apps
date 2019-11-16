@@ -6,6 +6,7 @@ import {Route} from "react-router-dom";
 // import LocationsList from './components/LocationsList';
 import React, { useEffect, useState } from "react";
 import axios from 'axios'; // need axios library for API request
+import SearchForm from './components/SearchForm';
 
 
 
@@ -25,10 +26,12 @@ export default function App() {
 
   return (
     <main>
+
       <Header />
+      
       <Route exact path='/' component={WelcomePage}/>
       <Route exact path='/characters' render={props=><CharacterList {...props} persona= {persona} />}/>
-      
+      <Route exact path="/search" render={props=><SearchForm {...props} persona= {persona} />}/>
       
     </main>
   );
