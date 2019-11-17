@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 
 
-export default function SearchForm({ onfind }) {
+function SearchForm({ onfind }) {
   const [find, setFind] = useState({ name: '' });
   const handleInputChange = event => {
     setFind({ ...find, name: event.target.value });
@@ -30,3 +30,5 @@ export default function SearchForm({ onfind }) {
     </div>
   );
 }
+
+export default SearchForm;
